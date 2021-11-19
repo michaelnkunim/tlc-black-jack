@@ -4,7 +4,7 @@ import java.util.List;
 public class Player {
     private String name;
 
-    List<Card> cards = new ArrayList<>();
+    private List<Card> cards = new ArrayList<>();
 
     public int getTotal(){
       return  cards.stream().mapToInt(card-> card.getRank().getNumber()).sum();
